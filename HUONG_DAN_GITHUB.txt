@@ -1,0 +1,35 @@
+GID NETWORK LIVE V1 - BO MA NGUON CHO KHO GITHUB MOI
+
+Tao kho moi tren GitHub: https://github.com/new
+  Repository name: gid-network-live
+  Visibility: Private (de nghi de giu ma nguon rieng tu)
+  Khong chon Add a README / .gitignore / license, vi ZIP da co cac tep can thiet.
+
+Sau khi tao kho: mo trang kho tren trinh duyet, chon upload files.
+Giai nen ZIP tren dien thoai, tai len CAC TEP BEN TRONG, giu nguyen thu muc.
+Khong upload ca tep ZIP de mong GitHub tu bien dich.
+
+Cau truc goc can co:
+.github/workflows/build-apk.yml
+app/build.gradle
+app/src/main/AndroidManifest.xml
+app/src/main/java/com/fishtracker/gidnetwork/MainActivity.java
+app/src/main/java/com/fishtracker/gidnetwork/CaptureService.java
+app/src/main/java/com/fishtracker/gidnetwork/PacketCore.java
+build.gradle
+settings.gradle
+gradle.properties
+
+Sau khi commit: Actions -> Build gid Network Live APK -> Run workflow.
+Neu bi loi doan nao, chup anh buoc do gui ChatGPT de sua theo log.
+Neu thanh cong: mo lan chay -> Artifacts -> gid-network-live-debug-apk.
+
+KHAI BAO TINH TRANG:
+- Da kiem tra Java PacketCore voi 4 tep PCAP (513 khung).
+- CHUA bien dich APK voi Android SDK hoac chay thu truc tiep tren Black Shark 5.
+- KHONG giai ma duoc FishID hien tai, chi nhan dien mau phan hoi nghi van.
+- Nguon KHONG chua goi PCAP, token GitHub, khoa ma hoa hoac thong tin dang nhap.
+
+QUAN TRONG: Ket noi GitHub OAuth da thanh cong, nhung quyen ghi kho qua ChatGPT
+chua duoc cap. Ban can tao kho va cap quyen cho GitHub App trong
+https://github.com/settings/installations truoc khi ChatGPT duoc phep ghi tep.

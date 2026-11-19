@@ -1,0 +1,40 @@
+name: Build gid Network Live APK
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Gradle 8.7
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.7'
+      - name: Test read-only PCAP parser (JDK)
+        run: |
+          mkdir -p build-test
+          javac -encoding UTF-8 -d build-test app/src/main/java/com/fishtracker/gidnetwork/PacketCore.java tests/SyntheticProtocolTest.java
+          java -cp build-test SyntheticProtocolTest
+      - name: Check Android SDK
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          if [ ! -d "$ANDROID_HOME/platforms/android-35" ]; then
+            "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-35" "build-tools;35.0.0"
+          fi
+      - name: Build gid APK
+        run: gradle :app:assembleDebug --no-daemon --stacktrace
+      - name: Upload unsigned-test release (debug APK)
+        uses: actions/upload-artifact@v4
+        with:
+          name: gid-network-live-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error

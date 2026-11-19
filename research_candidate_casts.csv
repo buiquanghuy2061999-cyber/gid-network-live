@@ -1,0 +1,7 @@
+﻿file,port,request_s,first_response_s,latency_ms,responses_70B,reportedFishName,fishid
+PCAPdroid_19_thg 11_11_05_27.pcap,3341,8.1318,8.2351,103,33,,UNVERIFIED
+PCAPdroid_19_thg 11_11_13_01.pcap,3341,13.7245,13.8833,159,33,,UNVERIFIED
+PCAPdroid_19_thg 11_11_22_24.pcap,3341,12.9586,13.135,176,30,,UNVERIFIED
+PCAPdroid_19_thg 11_16_30_37.pcap,3331,24.9385,25.1279,189,32,Cá mỏ nhọn,UNVERIFIED
+PCAPdroid_19_thg 11_16_30_37.pcap,3331,33.9927,34.1805,188,32,Chép vây xanh,UNVERIFIED
+PCAPdroid_19_thg 11_16_30_37.pcap,3331,43.8695,44.059,189,32,Cá củ cải,UNVERIFIED

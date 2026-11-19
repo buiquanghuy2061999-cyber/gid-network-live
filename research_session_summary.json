@@ -1,0 +1,37 @@
+[
+  {
+    "file": "PCAPdroid_19_thg 11_11_05_27.pcap",
+    "frames": 138,
+    "port": 3341,
+    "eventCandidates": 1,
+    "verifiedFishIDs": 0
+  },
+  {
+    "file": "PCAPdroid_19_thg 11_11_11_35.pcap",
+    "frames": 97,
+    "port": 3341,
+    "eventCandidates": 0,
+    "verifiedFishIDs": 0
+  },
+  {
+    "file": "PCAPdroid_19_thg 11_11_13_01.pcap",
+    "frames": 144,
+    "port": 3341,
+    "eventCandidates": 1,
+    "verifiedFishIDs": 0
+  },
+  {
+    "file": "PCAPdroid_19_thg 11_11_22_24.pcap",
+    "frames": 134,
+    "port": 3341,
+    "eventCandidates": 1,
+    "verifiedFishIDs": 0
+  },
+  {
+    "file": "PCAPdroid_19_thg 11_16_30_37.pcap",
+    "frames": 619,
+    "port": 3331,
+    "eventCandidates": 3,
+    "verifiedFishIDs": 0
+  }
+]
